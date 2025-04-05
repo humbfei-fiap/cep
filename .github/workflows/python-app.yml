@@ -34,5 +34,5 @@ jobs:
         pip install poetry
     - name: Rodando a aplicação
       run: |
-        printf('Rodando a aplicação\n')
+        echo('Instalado com sucesso')
 
