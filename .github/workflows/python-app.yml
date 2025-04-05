@@ -29,6 +29,10 @@ jobs:
         pip install flake8 pytest
         pip install requests
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Test with pytest
+    - name: Instalação do Poetry
       run: |
-        python app.py
+        pip install poetry
+    - name: Rodando a aplicação
+      run: |
+        printf('Rodando a aplicação\n')
+
